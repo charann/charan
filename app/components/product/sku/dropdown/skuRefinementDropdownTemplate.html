@@ -1,7 +1,11 @@
-<div class="bold-weight">
-    {{product.skuRefinements.skuGroups[parentindex].label}}</div>
-<select class='sku-refinement-dropdown size-select select-select'>
-    <option ng-repeat='item in product.skuRefinements.skuGroups[parentindex].contents' value='{{item.skuId}}'>
-        {{item.label}}
-    </option>
+<span class='label'>{{product.skuRefinements.skuGroups[parentIndex].label}}</span><br/>
+<select class='sku-refinement-dropdown'>
+  <option ng-repeat='item in product.skuRefinements.skuGroups[parentIndex].contents'
+          value='{{item.skuId}}'
+          ng-disabled="product.skuRefinements.validSkus.indexOf(item.skuId) === -1"
+          ng-selected='product.details.skuId == item.skuId'>
+    {{item.label}}
+  </option>
 </select>
+
+<br class='clear'/> <br/>
