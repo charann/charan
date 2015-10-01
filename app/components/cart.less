@@ -1,0 +1,304 @@
+
+.quantity-button {
+    clear: both;
+}
+
+.quantity {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 50px;
+}
+
+input.quantity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px !important;
+    height: 45px !important;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 16px;
+    color: #141414;
+    box-sizing: border-box;
+}
+
+input.quantity-plus {
+    position: absolute;
+    top: 0;
+    left: 39px;
+    width: 23px;
+    height: 23px;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    border: 1px solid #d8d8d8;
+    border-top-right-radius: 3px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input.quantity-minus {
+    position: absolute;
+    top: 22px;
+    left: 39px;
+    width: 23px;
+    height: 23px;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    border: 1px solid #d8d8d8;
+    border-bottom-right-radius: 3px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.quantity-button p {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.quantity-button button {
+    float: right;
+    border-radius: 3px;
+    width: 65%;
+}
+
+.quantity-button .quantity-head {
+    color: rgb(88, 88, 88);
+}
+
+
+/*shipto*/
+
+.shipto-container {
+    /*        width: 100%;
+    margin: 20px 0 0 0;*/
+    background: #fafafa;
+    position: relative;
+    border: 1px solid #f4f4f4;
+    margin-top: -10px;
+}
+
+.shipto-container:after,
+.shipto-container:before {
+    bottom: 100%;
+    left: 40px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.shipto-container:after {
+    border-color: rgba(250, 250, 250, 0);
+    border-bottom-color: #fafafa;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.shipto-container:before {
+    border-color: rgba(244, 244, 244, 0);
+    border-bottom-color: #f4f4f4;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.shipto-container a:hover {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+.shipto-container h3 {
+    background: #f0f0f0;
+    margin: 5px;
+    padding: 8px;
+    font-weight: 500;
+    color: #141414;
+    font-size: 1.33em;
+}
+
+.shipto-container h3 span {
+    color: #141414;
+    font-weight: 600;
+    margin: 1px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.shipto-container h3 img {
+    margin: 0 -1px -2px 0;
+}
+
+.shipto-container .shipnsave {
+    padding: 4px 13px;
+    color: #141414;
+}
+
+.shipto-container .shipnsave label {
+    line-height: 22px;
+}
+
+.shipto-container label strong {
+    color: #cc0000;
+}
+
+.shipto-container .shipnsave label strong {
+    display: block;
+    font-style: normal;
+    color: #878787;
+    font-size: 12px;
+}
+
+.shipto-container .shipnsave span.learnmore {
+    display: block;
+    font-weight: 600;
+    color: #141414;
+    font-size: 12px;
+    /*margin-top:-18px;*/
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.shipto-container span.learnmore:hover {
+    color: #cc0000;
+}
+
+.shipto {
+    padding: 0 20px 20px 12px;
+}
+
+.shipto hr {
+    height: 1px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.shipto p {
+    margin: 10px 0 0 28px;
+}
+
+.shipto p a,
+.shipto p span {
+    font-weight: 700;
+    font-size: 12px;
+    color: #141414;
+    cursor: pointer;
+}
+
+.shipto div.pick-up-cvs {
+    display: none;
+    margin: 10px 0 0 28px;
+}
+
+.shipto div.pick-up-cvs.active {
+    display: block;
+}
+
+.shipto div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.shipto div.address {
+    text-transform: uppercase;
+}
+
+.shippingfrequency {
+    display: none;
+}
+
+.shippingfrequency p {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #141414;
+}
+
+.shippingfrequency .select {
+    margin-left: 16px;
+    width: 200px;
+}
+
+.shippingfrequency .styledSelect {
+    font-size: 14px;
+    background-position: 170px 13px;
+}
+
+.shippingfrequency .styledSelect:hover {
+    background-position: 169px 12px;
+}
+
+.shippingfrequency .styledSelect.selected.active {
+    background-position: 169px 12px;
+}
+
+.ship-to-address.active {
+    position: relative;
+    background: #f0f0f0;
+    border-top: 1px solid #d5d5d5;
+    padding: 10px 0 0 0;
+}
+
+.ship-to-address.active:after,
+.ship-to-address.active:before {
+    bottom: 100%;
+    left: 48%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ship-to-address.active:after {
+    border-color: rgba(240, 240, 240, 0);
+    border-bottom-color: #f0f0f0;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.ship-to-address.active:before {
+    border-color: rgba(213, 213, 213, 0);
+    border-bottom-color: #d5d5d5;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.shipto-container .top-rated {
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+    color: #cc0000;
+    background: #fadb06;
+    border: 1px solid #e1c505;
+    border-radius: 3px;
+    border-top: none;
+    text-align: center;
+    padding: 5px 20px;
+    position: relative;
+    top: -3px;
+}
+
+.shipto-container .no-option {
+    font-size: 14px;
+    font-weight: 600;
+    color: #141414;
+}
+
+.shipto-container .out-of-stock {
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+}
