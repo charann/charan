@@ -1,0 +1,164 @@
+{
+    "skuId": "32512",
+    "detail": {
+        "skuId": "32512",
+        "description": "SundownNaturalsFishOil1290mgSoftgels",
+        "skuSize": "60OZ",
+        "shipCalcWeight": "0.12LBS",
+        "productId": "prod718218",
+        "displayName": "SundownNaturalsFishOil",
+        "seoSlug": "/vitamins/supplements/fish-oil-krill-omegas/sundown-naturals-fish-oil-1290-mg-softgels-skuid-32512",
+        "similarItemsLink": "/baby-child/bath-skin-care/baby-oil/N-3uZe6vwZ2k",
+        "brandId": "2384",
+        "brands": "Burt'sBees",
+        "upcNumber": "79285071299",
+        "topRatedBasedOnAvgRatingAndCount": "0",
+        "defaultParentCategory": "cat1234",
+        "categoryId": "cat5678",
+        "altTxt": "SundownNaturalsFishOil1290mgSoftgels",
+        "productReviewCount": "2",
+        "quantity": "1",
+        "pageCategory": "SHOP",
+        "clearanceFlag": "STANDARD",
+        "productRecommendedPercent": "",
+        "productRating": "5.0",
+        "pageName": "SHOP: PRODUCT:SundownNaturalsFishOil1290mgSoftgels(32512)",
+        "canonicalProdSlug": "/prod",
+        "bvQAFlag": "true"
+    },
+      "alternateProduct" :
+      {
+        "alternateProduct" : "345345",
+        "alternateSeoSlug":"/vitamins/supplements/fish-oil-krill-omegas/Band-Aid-Bandages-Flexible-Fabric-236066",
+        "alternateSkuFullName":"SundownNaturalsOil",
+        "alternateProductUPCNumber": "3453453453",
+        "alternateProductSizeUOMSize":"3oz",
+        "alternateProductRating":"4",
+        "alternateProductReview":"Good Product",
+        "alternateSkuID":"78997",
+        "alternateProductShippingSurcharge":"false",
+        "alternateProductFreeShippingFlag":"true"
+    },
+    "auxiliaryMedia": [
+        {
+            "hero": "/bizcontent/merchandising/productimages/large/38137003339.jpg",
+            "thumb": "/bizcontent/merchandising/productimages/thumb/38137003339.jpg"
+        },
+        {
+            "hero": "/bizcontent/merchandising/productimages/large/274134_1.jpg",
+            "thumb": "/bizcontent/merchandising/productimages/thumb/274134_1.jpg"
+        },
+        {
+            "hero": "/bizcontent/merchandising/productimages/thumb/274134_2.jpg",
+            "thumb": "/bizcontent/merchandising/productimages/thumb/274134_2.jpg"
+        },
+        {
+            "hero": "/bizcontent/merchandising/productimages/thumb/274134_3.jpg",
+            "thumb": "/bizcontent/merchandising/productimages/thumb/274134_3.jpg"
+        },
+        {
+            "hero": "/bizcontent/merchandising/productimages/thumb/274134_4.jpg",
+            "thumb": "/bizcontent/merchandising/productimages/thumb/274134_4.jpg"
+        }
+    ],
+    "breadCrumb": [
+        {
+            "url": "www.cvs.com",
+            "label": "Home"
+        },
+        {
+            "url": "www.cvs.com/shop",
+            "label": "Shop"
+        },
+        {
+            "url": "http: //www.cvs.com/shop/vitamins/N-3rZieZ2k",
+            "label": "Vitamins"
+        },
+        {
+            "url": "www.cvs.com/shop/vitamins/supplements/N-3tZ13hguiZ2k",
+            "label": "Supplements"
+        },
+        {
+            "url": "www.cvs.com/shop/vitamins/supplements/fish-oil-krill-omegas/N-3uZ13hguoZ2k",
+            "label": "FishOil,Krill&Omegas"
+        }
+    ],
+    "validSkus":[32512,32514],
+    "skuGroupInfo": [
+      {
+        "type": 0,
+        "label": "Size",
+        "contents": [
+          {
+            "skuId": 32512,
+            "value": "32",
+            "label": "32 Oz"
+          },
+          {
+            "skuId": 32513,
+            "value": "64",
+            "label": "64 Oz"
+          },
+          {
+            "skuId": 32514,
+            "value": "128",
+            "label": "128 Oz"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "label": "Color",
+        "contents": [
+          {
+            "skuId": 32512,
+            "hex": "FF0000",
+            "heroImage": "/heroImage1.png",
+            "value": "red",
+            "label": "red"
+          },
+          {
+            "skuId": 32513,
+            "hex": "00FF00",
+            "heroImage": "/heroImage2.png",
+            "value": "Green",
+            "label": "Green"
+          },
+          {
+            "skuId": 32514,
+            "hex": "0000FF",
+            "heroImage": "/heroImage2.png",
+            "value": "Blue",
+            "label": "Blue"
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "label": "Gallery",
+        "contents": [
+          {
+            "skuId": 32512,
+            "thumb": "/assets/img/product-images/thumbnails/a1.jpg",
+            "heroImage": "/assets/img/product-images/large/a1.jpg",
+            "value": "red",
+            "label": "Red Thumb"
+          },
+          {
+            "skuId": 32513,
+            "thumb": "/assets/img/product-images/thumbnails/a2.jpg",
+            "heroImage": "/assets/img/product-images/large/a2.jpg",
+            "value": "blue",
+            "label": "Blue Thumb"
+          },
+          {
+            "skuId": 32514,
+            "thumb": "/assets/img/product-images/thumbnails/a3.jpg",
+            "heroImage": "/assets/img/product-images/large/a3.jpg",
+            "value": "green",
+            "label": "Green Thumb"
+          }
+        ]
+      }
+    ]
+}
