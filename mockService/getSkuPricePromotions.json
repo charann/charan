@@ -1,0 +1,46 @@
+{
+  "skuId": "718218",
+  "priceInfo": {
+    "listPrice": "14.09",
+    "salePrice": "12.39",
+    "uomListPrice": "13.8/oz",
+    "uomSalePrice": "11.8/oz",
+    "promotionId": "promo1234",
+    "adBlockId": "43432",
+    "browseImageAltText": "Save 10% off",
+    "pricingModels": "[arPromotion1,arPromotion2,arPromotion3]",
+    "arShortDescription": "Save 10% off",
+    "arLongDescription": "Save 10% off",
+    "arFutureDescription": "Save 10% off",
+    "arAdjustmentPer": "2"
+  },
+  "statusInfo": {
+    "sessionConfirmation": "false",
+    "defaultStoreId": "7892",
+    "onlineStockStatus": "INSTOCK",
+    "arInd": 0,
+    "bohStockStatus": "NOTAVAILABLE",
+    "bohInventory": 6,
+    "fsaEligible": 0,
+    "spuind": 0,
+    "storeSpuInd": 0,
+    "onSaleFlag": 0,
+    "onlineOnly": 0,
+    "retailOnly": 0
+  },
+  "ogProductJson": {
+    "id": "634636",
+    "today_promo_id": "363463",
+    "ongoing_promo_id": "476745",
+    "today_discount_percent": "2",
+    "ongoing_discount_percent": "4",
+    "page_type": 1
+  },
+  "spinPricing": {
+    "promoType": "xForAmount",
+    "buyAmount": 2,
+    "totalPrice": 2.89,
+    "saveAmount": "0.89",
+    "spiDesc": "On Select CVS Brand Beauty Products"
+  }
+}
