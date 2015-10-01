@@ -1,7 +1,15 @@
-<div class='bold-weight'>{{product.skuRefinements.skuGroups[parentindex].label}}</div>
-<div class="swatches image-gallery">
-    <a href='#' class="thumbnail image-holder" ng-repeat='item in product.skuRefinements.skuGroups[parentindex].contents' ng-click='updateProduct()'>
-        <img ng-src='{{item.thumb}}' />
-    </a>
+<span class='label'>{{product.skuRefinements.skuGroups[parentIndex].label}}: {{title}}</span><br/>
+<div class='gallery'>
+  <a href='#'
+  class='thumbnail'
+  ng-repeat='item in product.skuRefinements.skuGroups[parentIndex].contents'
+  ng-click='updateProduct(item.skuId)'
+  ng-class='{notavailable: product.skuRefinements.validSkus.indexOf(item.skuId) === -1,
+            active: product.details.skuId == item.skuId}'
+  ng-mouseover='setActiveSku(item.skuId, item.label)'
+  ng-mouseleave='setActiveSku(product.details.skuId)'
+  >
+    <img ng-src='{{item.thumb}}'/>
+  </a>
 </div>
-
+<br class='clear'/>
