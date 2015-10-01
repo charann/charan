@@ -1,0 +1,61 @@
+{
+  "skuId": "718218",
+  "detailTab": {
+    "overview": "Pediatrician-tested. Hypo-allergenic. Safe. Effective. Natural. Specially formulated with apricot and grape seed oils to gently moisturize and comfort baby''s delicate skin. 100% natural. Natural Personal Care products for The Greater Good. Never any sulfates, parabens, phthalates, or petrochemicals. No animal testing. Made in the USA.",
+    "refinements": {
+      "Fit Choices": {
+        "displayGroup": "Yes",
+        "bannerImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+        "attributesList": [
+          {
+            "attributeName": "RED",
+            "iconImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverContent": "/bizcontent/vitaminshop/images/group1background.jpg"
+          },
+          {
+            "attributeName": "BLUE",
+            "iconImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverContent": "/bizcontent/vitaminshop/images/group1background.jpg"
+          }
+        ]
+      },
+      "Health Goals": {
+        "displayGroup": "Yes",
+        "bannerImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+        "attributesList": [
+          {
+            "attributeName": "BeautyFromWithin",
+            "priority": "Yes",
+            "iconImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverImageUrl": "/bizcontent/vitaminshop/images/group1background.jpg",
+            "rollOverContent": "/bizcontent/vitaminshop/images/group1background.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "ingredientsTab": {
+    "ingredients": "PrunusArmeniaca(Apricot)KernelOil,Vinifera(Grape)SeedOil,TriticumVulgare(Wheat)GermOil,Parfum(Fragrance),HelianthusAnnuus(Sunflower)SeedOil,RosmarinusOfficinalis(Rosemary)LeafExtract,Tocopherol,GlycineSoja(Soybean)Oil,Beta-Carotene,CanolaOil(HuileDeColza),Limonene.",
+    "nutrientFacts": {
+      "servingSize": "1softgel",
+      "servingsPerContainer: ": "",
+      "variation": ""
+    },
+    "nutrientDetailList": [
+      {
+        "nutrient": "1softgel",
+        "amountperServing": "",
+        "dailyValue": ""
+      },
+      {
+        "nutrient": "1softgel",
+        "amountperServing": "",
+        "dailyValue": ""
+      }
+    ]
+  },
+  "directionsTab": "Addtobathorapplydirectlytoskinafterbathing.Bathtubmaybeslipperyafteruse.",
+  "warningsTab": "Keepoutofreachofchildren."
+}
