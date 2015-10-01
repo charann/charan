@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/cvs-pdp.css">
+    <script type='text/javascript' src='./env.js'></script>
     <script type='text/javascript' src='./cvs-pdp.min.js'></script>
 </head>
 
 <body class="">
-    <div id='app-pdp'>
+    <div id='app-pdp' ng-controller='PDPController' class='cvs-pdp'>
         <div class="pdp-wrapper header-container">
             <div class="boilerplate">
                 <div class="bread-crumb">
@@ -39,25 +40,25 @@
         <div class="pdp-wrapper">
             <product-details-sticky-menu></product-details-sticky-menu>
             <div class="product-main-tab row">
-                <div class="col-xs-24 product-top-container">
-                    <div class="col-md-16 col-sm-24 col-xs-24 image-gallery-container">
-                        <div class="row">
-                            <div class="thumb-nails hidden-xs">
-                                <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b1.jpg"></span>
-                                <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b2.jpg"></span>
-                                <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b3.jpg"></span>
-                                <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b4.jpg"></span>
-                                <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b5.jpg"></span>
-                            </div>
-                            <div class="large-image">
-                                <span class="item b active"><img src="assets/img/product-images/large/b1.jpg"></span>
-                            </div>
-                            <div class="slide">
-                            </div>
+                <div class="col-xs-24">
+                    <div class="col-md-16 col-sm-24 col-xs-24">
+                      <div class='media-gallery'>
+                        <div class="thumb-nails hidden-xs">
+                            <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b1.jpg"></span>
+                            <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b2.jpg"></span>
+                            <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b3.jpg"></span>
+                            <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b4.jpg"></span>
+                            <span class="thumb-nail"><img class="img-responsive" src="assets/img/product-images/thumbnails/b5.jpg"></span>
                         </div>
+                        <div class="large-image">
+                            <span class="item b active"><img src="assets/img/product-images/large/b1.jpg"></span>
+                        </div>
+                        <div class="slide">
+                        </div>
+                      </div>
                     </div>
                     <div class="col-md-8 col-sm-24 col-xs-24 sidebar">
-                        <sku-group service='true'></sku-group>
+                        <sku-group></sku-group>
                         <div class="quantity-button">
                             <p>Qty</p>
                             <span class="quantity">
@@ -70,42 +71,37 @@
                             </button>
                             <div class="clear"></div>
                         </div>
-                        <div class="ship-content-tab">
-                            <div class="shipto-container">
-                                <h3>How to get it <span class="learnmore md-trigger" data-modal="item-availability-modal">Check store availability <img src="assets/img/arrow-right.png" width="7" alt="sprite"></span></h3>
-                                <div class="shipto shippingoptions">
-                                    <input id="shipto" type="radio" value="ship-to-address" name="shipping-option">
-                                    <label for="shipto"><span><span></span></span>Ship one time</label>
-                                    <hr>
-                                    <input id="shipto1" type="radio" name="shipping-option" value="pick-up-cvs" />
-                                    <label for="shipto1"><span><span></span></span>Pick up today at <strong>myCVS</strong> Store in
-                                        <br>Woonsocket, RI</label>
-                                    <label>
+                    </div>
+                </div>
+                <div class="product-tabs-container col-xs-24">
+                    <div class="ship-content-tab col-md-8  col-xs-24">
+                        <div class="shipto-container">
+                            <h3>How to get it <span class="learnmore md-trigger" data-modal="item-availability-modal">Check store availability <img src="assets/img/arrow-right.png" width="7" alt="sprite"></span></h3>
+                            <div class="shipto shippingoptions">
+                                <input id="shipto" type="radio" value="ship-to-address" name="shipping-option">
+                                <label for="shipto"><span><span></span></span>Ship one time</label>
+                                <hr>
+                                <input id="shipto1" type="radio" name="shipping-option" value="pick-up-cvs" />
+                                <label for="shipto1"><span><span></span></span>Pick up today at <strong>myCVS</strong> Store in
+                                    <br>Woonsocket, RI</label>
+                                <label>
+                                </label>
+                                <p><a href="#">Find in another store</a></p>
+                            </div>
+                            <div class="ship-to-address">
+                                <h3>Schedule a recurring delivery</h3>
+                                <div class="shipnsave">
+                                    <input type="checkbox" id="shipnsave" name="shipnsave" value="shipnsave" />
+                                    <label for="shipnsave"><span></span> Ship every 1 to 6 months
+                                        <strong>Save 20% + FREE shipping</strong>
                                     </label>
-                                    <p><a href="#">Find in another store</a></p>
-                                </div>
-                                <div class="ship-to-address">
-                                    <h3>Schedule a recurring delivery</h3>
-                                    <div class="shipnsave">
-                                        <input type="checkbox" id="shipnsave" name="shipnsave" value="shipnsave" />
-                                        <label for="shipnsave"><span></span> Ship every 1 to 6 months
-                                            <strong>Save 20% + FREE shipping</strong>
-                                        </label>
-                                        <span class="learnmore md-trigger" data-title="What Is Ship &amp; Save?" data-modal="shipnsave-modal">Learn more</span>
-                                    </div>
+                                    <span class="learnmore md-trigger" data-title="What Is Ship &amp; Save?" data-modal="shipnsave-modal">Learn more</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-16 col-sm-24 col-xs-24">
-                        <product-details-stationary-tab></product-details-stationary-tab>
-                    </div>
+                    <product-details-stationary-tab></product-details-stationary-tab>
                 </div>
-                <!-- <div class="product-tabs-container col-xs-24"> -->
-                <!--  <div class="ship-content-tab col-md-8  col-xs-24">
-                        
-                    </div> -->
-                <!-- </div> -->
             </div>
         </div>
     </div>
