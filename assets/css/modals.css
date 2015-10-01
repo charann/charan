@@ -1,0 +1,692 @@
+@media (min-width: 768px) {
+
+	.md-modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 70%;
+		max-width: 700px;
+		min-width: 320px;
+		max-height: 100%;
+		overflow:auto;
+		z-index: 2000;
+		visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+	
+	.md-effect-1 .md-content {
+		-webkit-transform: scale(0.7);
+		-moz-transform: scale(0.7);
+		-ms-transform: scale(0.7);
+		transform: scale(0.7);
+		opacity: 0;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	
+	.md-show.md-effect-1 .md-content {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+
+	.md-modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 90%;
+		max-width: 700px;
+		min-width: 320px;
+		max-height: 100%;
+		overflow:auto;
+		z-index: 2000;
+		visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	
+	.md-effect-1 .md-content {
+		-webkit-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+		transform: translateX(-100%);
+		opacity: 0;
+		-webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+		-moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+		transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	}
+	
+	.md-show.md-effect-1 .md-content {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+}
+
+
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.container {
+	background: #e74c3c;
+	min-height: 100%;
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+button.md-close {
+	background: url(../images/close.png) no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 23px;
+	height: 23px;
+	overflow: visible;
+	text-indent: -9999px;
+	cursor: pointer;
+	padding:0;
+	border:none;
+	z-index:99999;
+}
+
+.md-content {
+	text-align:left;
+	background:#fff;
+	color:#464646;
+	font-size:14px;
+	line-height:16px;
+}
+
+
+
+
+
+
+
+/*ship and save*/
+#shipnsave-modal .md-content {
+	padding: 30px;
+}
+
+#shipnsave-modal p {
+	font-weight:300;
+	line-height:22px;
+}
+
+#shipnsave-modal p.disclaimer {
+	color:#8c8a8a;
+}
+
+#shipnsave-modal h2 {
+	color:#141414;
+	font-weight:600;
+	font-size:22px;
+	line-height:30px;
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+/*item availability*/
+#item-availability-modal .md-content {
+	padding-bottom:15px;
+}
+
+#item-availability-modal p.disclaimer {
+	color:#8c8a8a;
+	font-size:12px;
+	line-height:16px;
+}
+
+#item-availability-modal p {
+	font-weight:400;
+	line-height:22px;
+}
+
+#item-availability-modal h1 {
+	color:#141414;
+	font-weight:500;
+	font-size:20px;
+	line-height:20px;
+	padding:8px 20px;
+	margin:0 0 10px 0;
+	border-bottom:1px solid #cecece;
+}
+
+#item-availability-modal h2 {
+	color:#141414;
+	font-weight:500;
+	font-size:18px;
+	line-height:20px;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#item-availability-modal input[type=text]#bopus-quantity {
+	width:44px;
+	text-align:center;
+	padding-left:0;
+}
+
+#item-availability-modal .item-availability-header {
+	margin:0 0 10px 0;
+}
+#item-availability-modal .productimage {
+	float:left;
+	margin-bottom:20px;
+}
+#item-availability-modal .product-price {
+	font-size:20px;
+}
+#item-availability-modal .reviews {
+	display:inline-block;
+	margin-left:40px;
+}
+#item-availability-modal .reviews {
+	display:inline-block;
+	font-weight:600;
+}
+.item-availability-modal-wrapper {
+	padding:0 20px;
+}
+#item-availability-modal .details-reviews {
+	margin-top:15px;
+}
+#item-availability-modal #store-quantity-pickup {
+	background:#f8f8f8;
+	display: table-row;
+}
+.quantity-pickup {
+	white-space:nowrap;
+	padding:10px 0;
+}
+#item-availability-modal #store-quantity-pickup .quantity-pickup {
+	font-size:16px;
+	vertical-align: middle;
+	display: table-cell;
+	padding:10px 15px;
+	width:65%;
+	white-space: nowrap;
+	width:225px;
+}
+#item-availability-modal #store-quantity-pickup .store {
+	vertical-align: top;
+	display: table-cell;
+	padding:10px 15px;
+	width:425px;
+}
+#item-availability-modal #store-quantity-pickup .store p {
+	font-weight:600;
+	margin:0;
+	padding:0;
+	line-height:16px;
+}
+#item-availability-modal #store-quantity-pickup .store p.mycvs {
+	color:#ff0000;
+}
+#item-availability-modal #store-quantity-pickup .store p.mycvs i {
+	color:#5b5b5b;
+	font-style:normal;
+}
+#item-availability-modal .address-search {
+	margin-bottom:20px;
+}
+#item-availability-modal .address-search p {
+	margin-bottom:7px;
+}
+#item-availability-modal .address-search input {
+	float:left;
+	width:77%;
+}
+#item-availability-modal .address-search button {
+	float:right;
+}
+#item-availability-modal h3 {
+	font-weight:400;
+	font-size:18px;
+	margin:0 0 10px 0;
+	padding:0;
+}
+#item-availability-modal .modalContainerAvailTable {
+	height:225px;
+	border: 1px solid #D0CBCB;
+	overflow:auto;
+	margin:0 20px;
+}
+#item-availability-modal .storeRow {
+	display: table-row;
+	font-size:13px;
+	line-height:16px;
+}
+#item-availability-modal .storeRow:nth-child(2n) {
+  background-color: #fafafa;
+}
+#item-availability-modal .storeRow .address {
+	vertical-align: top;
+	display: table-cell;
+	padding:15px;
+}
+#item-availability-modal .storeRow .address p {
+	color:#cc0000;
+	font-weight:600;
+	margin:10px 0;
+	padding:0;
+	line-height:16px;
+}
+#item-availability-modal .storeRow .availability {
+	vertical-align: middle;
+	display: table-cell;
+	padding:15px 40px 15px 15px;
+}
+
+
+
+
+
+
+
+
+/*one-hour*/
+#one-hour-modal {
+	padding: 0 0 15px 0;
+}
+
+#one-hour-modal p {
+	font-weight:300;
+	line-height:22px;
+}
+
+#one-hour-modal p.disclaimer {
+	color:#8c8a8a;
+}
+
+#one-hour-modal h1 {
+	color:#141414;
+	font-weight:500;
+	font-size:20px;
+	line-height:20px;
+	padding:8px 20px;
+	margin:0;
+	border-bottom:1px solid #cecece;
+}
+
+#one-hour-modal h2 {
+	color:#141414;
+	font-weight:400;
+	font-size:24px;
+	line-height:26px;
+	margin: 0;
+	padding: 50px 15px 0 0;
+}
+
+#one-hour-modal img.bopus {
+	float:left;
+}
+
+
+#one-hour-modal .one-hour-questions {
+	padding:0 !important;
+}
+
+#one-hour-modal .one-hour-questions h3 {
+	background:#f9f9f9;
+	font-weight:600;
+	font-size:14px;
+	margin:15px 0 5px 0;
+	padding:8px 23px;
+}
+
+#one-hour-modal .one-hour-questions p {
+	padding:0 23px;
+	margin:0;
+	font-size:13px;
+	line-height:16px;
+}
+
+#one-hour-modal .one-hour-questions p a {
+	font-weight:600;
+	text-decoration: none;
+}
+
+#one-hour-modal .one-hour-questions p a:hover {
+	color:#cc0000;
+	text-decoration:none;
+}
+
+#one-hour-modal .one-hour-questions p img {
+	margin:0 -1px -2px 0;
+}
+
+#one-hour-modal .one-hour-questions {
+	padding:0 15px;
+}
+
+#one-hour-modal .one-hour-header {
+	padding:0 23px;
+}
+
+#one-hour-modal .one-hour-header p {
+	padding:0;
+	margin:0;
+}
+
+#one-hour-modal .one-hour-header .header-sub {
+	padding:15px 0;
+}
+
+#one-hour-modal .one-hour-header p span {
+	display:inline-block;
+	float:left;
+	width:20px;
+	height:20px;
+	border:1px solid #141414;
+	border-radius:10px;
+	font-size:14px;
+	line-height:20px;
+	font-weight:600;
+	text-align:center;
+	margin:0 5px 25px 0;
+}
+
+
+
+
+
+
+
+
+/*one-hour-faq*/
+#one-hour-faq-modal {
+	padding: 0 0 15px 0;
+}
+
+#one-hour-faq-modal .one-hour-faq-header {
+	padding:0 23px;
+	display:table-cell;
+}
+
+#one-hour-faq-modal .one-hour-faq-header .header-sub {
+	font-size:18px;
+	padding:5px 0;
+}
+
+#one-hour-faq-modal .one-hour-faq-header .save-time {
+	color:#cc0000;
+	font-size:20px;
+	margin:20px 0 10px 0;
+	padding:0;
+}
+
+#one-hour-faq-modal .one-hour-faq-header .image {
+	vertical-align: top;
+	display:inline-block;
+	width:45%;
+	margin-right:20px;
+}
+
+#one-hour-faq-modal img.bopus {
+	width:100%;
+}
+
+#one-hour-faq-modal .one-hour-faq-header .text {
+	vertical-align: top;
+	display:inline-block;
+	width:45%;
+}
+
+#one-hour-faq-modal .one-hour-faq-header p {
+	margin: 15px 0;
+}
+
+#one-hour-faq-modal .one-hour-faq-header p span {
+	display:inline-block;
+	float:left;
+	width:20px;
+	height:20px;
+	border:1px solid #141414;
+	border-radius:10px;
+	font-size:14px;
+	line-height:20px;
+	font-weight:600;
+	text-align:center;
+	margin:0 5px 30px 0;
+}
+
+#one-hour-faq-modal p {
+	font-weight:300;
+	line-height:22px;
+}
+
+#one-hour-faq-modal p.disclaimer {
+	color:#8c8a8a;
+}
+
+#one-hour-faq-modal h1 {
+	color:#141414;
+	font-weight:500;
+	font-size:20px;
+	line-height:20px;
+	padding:8px 20px;
+	margin:0;
+	border-bottom:1px solid #cecece;
+}
+
+#one-hour-faq-modal h2 {
+	color:#141414;
+	font-weight:600;
+	font-size:24px;
+	line-height:26px;
+	margin: 0;
+	padding: 0px 15px 0 0;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions {
+	padding:0 !important;
+}
+
+#one-hour-faq-modal .title {
+	font-weight:600;
+	padding:0 23px;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions h3 {
+	border-top:1px solid #8e8e8e;
+	font-weight:400;
+	font-size:14px;
+	margin: 0;
+	padding:10px 38px;
+	background:url(../images/arrow-right.png) no-repeat;
+	background-size:8px 13px;
+	background-position:23px 11px;
+	cursor: pointer;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions h3.active {
+	background:url(../images/arrow-down.png) no-repeat;
+	background-size:13px 8px;
+	background-position:19px 14px;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions p {
+	padding:10px 41px;
+	margin:0;
+	font-size:13px;
+	line-height:16px;
+	display:none;
+	border-top:1px solid #f6f6f6;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions p a {
+	font-weight:600;
+	text-decoration: none;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions p a:hover {
+	color:#cc0000;
+	text-decoration:none;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions p img {
+	margin:0 -1px -2px 0;
+}
+
+#one-hour-faq-modal .one-hour-faq-questions {
+	padding:0 15px;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+	#item-availability-modal .modalContainerAvailTable {
+		height:auto;
+		border:none;
+		border-top: 1px solid #D0CBCB;
+		border-bottom: 1px solid #D0CBCB;
+		overflow:normal;
+		margin:0;
+	}
+
+	#item-availability-modal .address-search input[type=text] {
+		width:65%;
+	}
+	#item-availability-modal #store-quantity-pickup {
+		background:#f9f9f9;
+		display: block;
+	}
+	#item-availability-modal #store-quantity-pickup .store {
+		display: block;
+	}
+	#item-availability-modal #store-quantity-pickup .quantity-pickup {
+		display: block;
+	}
+	#item-availability-modal .storeRow .availability {
+		padding:15px;
+	}
+	#item-availability-modal .storeRow .address {
+		padding:15px 0 15px 15px;
+		width:50%;
+	}
+
+	#one-hour-modal h2 {
+		font-size:18px;
+		line-height:20px;
+		margin: 0;
+		padding: 50px 15px 0 0;
+	}
+
+	#one-hour-modal .one-hour-header p {
+		padding:0;
+		margin:0;
+	}
+
+	#one-hour-modal .one-hour-header p span {
+		margin:0 5px 30px 0;
+	}
+
+	#one-hour-faq-modal h2 {
+		text-align:center;
+	}
+
+	#one-hour-faq-modal .one-hour-faq-header {
+		display:block;
+	}
+
+	#one-hour-faq-modal .one-hour-faq-header .header-sub {
+		text-align:center;
+	}
+
+	#one-hour-faq-modal .one-hour-faq-header .image {
+		display:block;
+		margin:0 auto;
+		width:280px;
+	}
+
+	#one-hour-faq-modal .one-hour-faq-header .text {
+		display:block;
+		width:100%;
+	}
+
+	#one-hour-faq-modal .one-hour-faq-header p span {
+		margin:0 5px 25px 0;
+	}
+	
+	#one-hour-faq-modal .one-hour-faq-header button {
+		margin:0;
+		width:100%;
+	}
+
+	#one-hour-faq-modal img.bopus {
+		width:280px;
+	}
+
+	#one-hour-faq-modal .save-time {
+		text-align:center;
+		margin:10px 0;
+	}
+
+	#one-hour-faq-modal .title {
+		text-align:center;
+	}
+
+}

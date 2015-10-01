@@ -1,0 +1,7 @@
+<div class='bold-weight'>{{product.skuRefinements.skuGroups[parentindex].label}}</div>
+<div class="swatches image-gallery">
+    <a href='#' class="thumbnail image-holder" ng-repeat='item in product.skuRefinements.skuGroups[parentindex].contents' ng-click='updateProduct()'>
+        <img ng-src='{{item.thumb}}' />
+    </a>
+</div>
+

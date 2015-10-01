@@ -1,0 +1,7 @@
+<div class="bold-weight">
+    {{product.skuRefinements.skuGroups[parentindex].label}}</div>
+<select class='sku-refinement-dropdown size-select select-select'>
+    <option ng-repeat='item in product.skuRefinements.skuGroups[parentindex].contents' value='{{item.skuId}}'>
+        {{item.label}}
+    </option>
+</select>

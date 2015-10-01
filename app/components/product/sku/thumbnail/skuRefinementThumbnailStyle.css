@@ -1,0 +1,28 @@
+/*
+    All styles for Swatches are defined in skuGroupStyle since they are the same as thumbnails.
+
+    Any changes that need to override should go in here.
+*/
+
+.gallery {
+	a.thumbnail {
+ 	border: 1px solid #fff;
+ 	width:60px;
+ 	height:60px;
+ 	box-sizing: border-box;
+ }
+
+  a.thumbnail.active img,
+	a.thumbnail:hover img,
+	a.thumbnail.notavailable img {
+ 	position:absolute;
+ 	top:-1px;
+ 	left:-1px;
+ }
+
+ a.thumbnail img {
+ 	position:absolute;
+ 	top:0;
+ 	left:0;
+ }
+}

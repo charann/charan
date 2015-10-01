@@ -1,0 +1,9 @@
+<div class="swatch-names">
+    <span class="bold-weight">{{product.skuRefinements.skuGroups[parentindex].label}}</i>
+    </span>
+</div>
+<div class='swatch-container'>
+    <a class='swatch' href="#" ng-repeat='item in product.skuRefinements.skuGroups[parentindex].contents' ng-click='updateProduct()' >
+    <span style='background-color:#{{item.hex}}'> </span>
+    </a>
+</div>

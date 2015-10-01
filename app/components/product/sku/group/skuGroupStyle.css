@@ -1,0 +1,54 @@
+.sku-group {
+
+  /*
+    Corresponds to thumbnails and swatches.
+
+    Individual styles in their less stylesheets may override these.
+  */
+
+  .gallery {
+
+  	margin:25px 0 0 0;
+
+   a {
+    	display:inline-block;
+    	width:28px;
+    	height:28px;
+    	border-radius:0px;
+    	border: 1px solid #6b6b6b;
+    	margin:0 7px 7px 0;
+    	cursor: pointer;
+    	overflow:hidden;
+    	box-sizing: border-box;
+    	position:relative;
+      text-decoration: none;
+    }
+
+    a.active, a:hover {
+    	border-radius:0px;
+    	border: 2px solid #141414;
+    	overflow:hidden;
+    }
+
+   a.notavailable {
+    	border-radius:0px;
+    	border: 1px dashed #000;
+    	overflow:hidden;
+    }
+
+  }
+
+  .label {
+      font-size:14px;
+      font-weight:700;
+      color:#141414;
+      margin:0;
+    	padding:15px 0 0 0;
+      font-weight:bold;
+
+      .value {
+        font-weight:normal;
+      }
+  }
+
+}

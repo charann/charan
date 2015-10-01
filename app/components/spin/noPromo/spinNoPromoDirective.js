@@ -1,0 +1,3 @@
+/*
+*spinNoPromoDirective.js
+*/

@@ -1,0 +1,231 @@
+/*FORM*/
+
+select {
+	width:50px;
+	margin:5px;
+}
+
+.select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font-size:16px;
+	margin:8px 0 12px 0;
+	width:140px;
+	height:35px;
+    color: #717171;
+    font-weight:300 !important;
+}
+
+.styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:  10px 52px 10px 12px;
+	background:#fff url(../images/select-arrow.png) no-repeat;
+	background-position: 110px 13px;
+    font-size:16px;
+	border: 1px solid #818181;
+	border-radius:3px;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.styledSelect:hover {
+	border: 2px solid #8c8c8c !important;
+    padding:  9px 51px 9px 11px;
+	background-position: 109px 12px;
+}
+
+.styledSelect:active, .styledSelect.active {
+    background-color:#f1f1f1;
+}
+
+.styledSelect.selected.active {
+    background-color:#f1f1f1 !important;
+    padding:  9px 51px 9px 11px;
+	border: 2px solid #818181 !important;
+	background-position: 109px 12px;
+}
+
+.options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border-left:2px solid #818181;
+    border-right:2px solid #818181;
+    border-bottom:2px solid #818181;
+    background-color:white;
+    font-size:14px;
+    color:#141414;
+}
+.options li {
+    padding:10px;
+    margin:0 0;
+	border-bottom:none;
+}
+.options li:hover {
+    background-color:#a0d0ea;
+    color:#141414;
+}
+
+input[type="checkbox"] {
+    /*display:none;*/
+}
+
+input[type="checkbox"] + label {
+	font-size:14px;
+	font-weight:400;
+    cursor:pointer;
+    position:relative;
+    /*top:-22px;*/
+    left:32px;
+}
+
+input[type="checkbox"] + label i {
+	font-style:italic;
+}
+
+input[type="checkbox"] + label span {
+    display:block;
+    width:20px;
+    height:20px;
+	border: 1px solid #818181;
+    margin:0 10px 0 0;
+    vertical-align:middle;
+    border-radius:3px;
+    cursor:pointer;
+    position:relative;
+    top:22px;
+    left:-32px;
+	background: #fff;
+}
+
+input[type="checkbox"]:checked + label span {
+	background: #fff url(../images/check-on.png) no-repeat;
+	background-position: 3px 4px;
+}
+
+input[type="radio"] {
+    /*display:none;*/
+}
+
+input[type="radio"] + label {
+	font-size:14px;
+	font-weight:400;
+    cursor:pointer;
+    position:relative;
+    color:#141414;
+    left:28px;
+}
+
+input[type="radio"] + label > span {
+    display:block;
+    width:19px;
+    height:19px;
+	border: 1px solid #818181;
+	border-radius: 10px;
+    margin:0 10px 0 0; 
+    vertical-align:middle;
+    cursor:pointer;
+    position:relative;
+    top:20px;
+    left:-28px;
+	background: #fff;
+}
+
+input[type="radio"]:checked + label {
+	font-weight:700;
+}
+
+input[type="radio"]:checked + label > span {
+    width:19px;
+    height:19px;
+	border: 1px solid #818181;
+	background:#fff;
+}
+
+input[type="radio"]:checked + label span span {
+    width:9px;
+    height:9px;
+	border: none;
+	background:#3dbbac;
+	display:block;
+	border-radius: 5px;
+	margin:5px;
+}
+
+input[type="radio"] + label i {
+	font-style:normal;
+	color:#cc0000;
+}
+
+input[type="radio"]:disabled + label {
+    color:#838383;
+}
+
+input[type="radio"]:disabled + label > span {
+	border: 1px solid #d3d3d4;
+	background: #eeeeee;
+}
+
+
+button {
+	padding: 0 5%;
+	background:#cc0000;
+	border:none;
+	color:#fff;
+	font-size:16px;
+	font-weight:500;
+	cursor: pointer;
+	height:44px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+button:hover {
+	background:#e13220;
+}
+
+button:active {
+	background:#a60000;
+}
+
+button.alternate {
+	border:1px solid #ccc;
+	background:#e5e5e5;
+	color:#1e1e1e;
+}
+
+button.alternate:hover {
+	background:#e9e9e9;
+}
+
+button.alternate:active {
+	background:#d7d7d7;
+}
+
+input[type=text] {
+	color: #646464;
+	font-size: 16px;
+	line-height:16px;
+	border: 1px solid #D0CBCB;
+	border-radius: 3px;
+	font-weight:400;
+	width:75%;
+	height:44px;
+	box-sizing: border-box;
+	margin:0;
+	padding-left:10px;
+	text-align:left;
+}
+

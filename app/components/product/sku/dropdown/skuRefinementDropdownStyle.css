@@ -1,0 +1,11 @@
+.sku-refinement-dropdown {
+    width: 140px;
+    height: 44px;
+    margin-top: 8px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 9px 51px 9px 11px;
+    border: 2px solid #818181;
+    color: #717171;
+    font-weight: 300;
+}
