@@ -25,27 +25,8 @@ window.angular = {};
 
 var ng = require('angular');
 
-ng.module('ProductDetailsPage', []);
-
-window.angular = windowAngular= ng;
-// windowAngular = {};
-
-/*
-    Since we're using multiple versions of Angular, we'll also potentially have multiple
-    angular apps running on the same page.
-
-    Since angular limits the usage of the ng-app attribute, we are programmatically
-    linking our apps based on ID.
-
-    DomReady is a library that easily implements DomReady (document.ready)
-    functionality with Browersify
-*/
-
-domready = require('domready');
-
-domready(function() {
-    ng.bootstrap(document.getElementById('app-pdp'), ['ProductDetailsPage']);
-});
+ng.module('ProductDetailsPage', [ require('angular-ui-bootstrap')
+                                ]);
 
 /*
     We can then go ahead and write our app as normal.
@@ -61,8 +42,13 @@ domready(function() {
 
 
 ng.module('ProductDetailsPage')
-    .service('ProductService',
-        require('./services/productService'));
+  .service('ProductService',
+    require('./services/productService'));
+
+
+ng.module('ProductDetailsPage')
+  .directive('smoothScroll',
+    require('./components/smoothScroll/smoothScrollDirective'));
 
 /*
   PDP Controller
@@ -72,8 +58,8 @@ ng.module('ProductDetailsPage')
 */
 
 ng.module('ProductDetailsPage')
-    .controller('PDPController',
-        require('./components/product/pdp/pdpController'));
+  .controller('PDPController',
+    require('./components/product/pdp/pdpController'));
 
 
 /*
@@ -81,21 +67,20 @@ ng.module('ProductDetailsPage')
 */
 
 ng.module('ProductDetailsPage')
-    .directive('skuGroup',
-        require('./components/product/sku/group/skuGroupDirective'));
+  .directive('skuGroup',
+    require('./components/product/sku/group/skuGroupDirective'));
 
 ng.module('ProductDetailsPage')
-    .directive('skuRefinementDropdown',
-        require('./components/product/sku/dropdown/skuRefinementDropdownDirective'));
+  .directive('skuRefinementDropdown',
+    require('./components/product/sku/dropdown/skuRefinementDropdownDirective'));
 
 ng.module('ProductDetailsPage')
-    .directive('skuRefinementColorSwatch',
-        require('./components/product/sku/swatch/skuRefinementSwatchDirective'));
+  .directive('skuRefinementColorSwatch',
+    require('./components/product/sku/swatch/skuRefinementSwatchDirective'));
 
 ng.module('ProductDetailsPage')
-    .directive('skuRefinementThumbnail',
-        require('./components/product/sku/thumbnail/skuRefinementThumbnailDirective'));
-
+  .directive('skuRefinementThumbnail',
+    require('./components/product/sku/thumbnail/skuRefinementThumbnailDirective'));
 
 /*
   Product Menu
@@ -103,11 +88,41 @@ ng.module('ProductDetailsPage')
 
 // Stationary
 ng.module('ProductDetailsPage')
-    .directive('productDetailsStationaryTab',
-        require('./components/product/menu/stationary/productDetailsStationaryDirective'));
+  .directive('productDetailsStationaryTab',
+    require('./components/product/menu/stationary/productDetailsStationaryDirective'));
 
 //Sticky
 
 ng.module('ProductDetailsPage')
-    .directive('productDetailsStickyMenu',
-        require('./components/product/menu/sticky/productDetailsStickyMenuDirective'));
+.directive('productDetailsStickyMenu',
+  require('./components/product/menu/sticky/productDetailsStickyMenuDirective'));
+
+
+/*
+    Dynamic templates -- specify URL to pull in template
+*/
+
+ng.module('ProductDetailsPage')
+.directive('dynamicTemplate',
+  require('./components/dynamicTemplate/dynamicTemplateDirective'));
+
+  /*
+      Since we're using multiple versions of Angular, we'll also potentially have multiple
+      angular apps running on the same page.
+
+      Since angular limits the usage of the ng-app attribute, we are programmatically
+      linking our apps based on ID.
+
+      DomReady is a library that easily implements DomReady (document.ready)
+      functionality with Browersify
+  */
+
+  domready = require('domready');
+
+  domready(function(){
+    ng.bootstrap(document.getElementById('app-pdp'),
+                ['ProductDetailsPage']);
+
+    window.angular = windowAngular;
+    windowAngular = {};
+  });
